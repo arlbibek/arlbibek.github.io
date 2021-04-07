@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neue Haas Grotesk Text Pro", Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  background-color: #1c1c1ced;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+p,
+a {
+  color: #b0914f;
+}
+
+a {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  margin: 55px;
+}
+.h1-colourful {
+  transition: ease all 1s;
+  background: -webkit-linear-gradient(-70deg, #fff, #b0914f);
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+}
+a:hover {
+  color: white;
+}
+
+.social-links {
+  margin: 0.3em;
+}
