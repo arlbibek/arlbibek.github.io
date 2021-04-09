@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+
+import ModalResume from "./ModalResume";
+
 import "./App.css";
 
 function App() {
+  const [show, setShow] = useState(false);
   return (
     <div className="App">
+      <img
+        className="profile"
+        alt="Profile Bibek Aryal"
+        src="./profile_bibek_aryal.jpg"
+        width="150px"
+        height="150px"
+      />
       <header className="App-header">
-        <div style={{ width: "800px", margin: "0 auto" }}>
+        <div className="my-div" style={{ width: "800px", margin: "0 auto" }}>
           <h1 className="h1-colourful">Hi, I'm Bibek Aryal!</h1>
           <p>
             Currently a final year{" "}
@@ -30,15 +41,16 @@ function App() {
           </p>
           <br />
           <br />
-          <a
-            href="https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal%202021.pdf"
+          <button
+            onClick={() => setShow(true)}
             target="_blank"
             rel="noreferrer"
             title="Read my resume (PDF)"
-            className="social-links"
+            className="social-links btn-resume"
           >
             Resume
-          </a>
+          </button>
+          <ModalResume onClose={() => setShow(false)} show={show} />
           <a
             href="https://github.com/arlbibek"
             target="_blank"

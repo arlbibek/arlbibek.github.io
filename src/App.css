@@ -44,10 +44,30 @@ h1 {
   background-clip: border-box;
   -webkit-background-clip: text;
 }
+
 a:hover {
   color: white;
 }
 
 .social-links {
   margin: 0.3em;
+}
+img.profile {
+  border-radius: 7px;
+  margin: 11px;
+  border: 3px solid white;
+}
+img.profile:hover {
+  transition: ease all 0.5s;
+  border: 3px solid #b0914f;
+}
+.btn-resume {
+  color: #b0914f;
+  border: none;
+  background-color: #2c2c2c;
+  text-decoration: underline;
+  font-size: medium;
+}
+.btn-resume:hover {
+  color: #fff;
 }
