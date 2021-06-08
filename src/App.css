@@ -1,73 +1,167 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+:root {
+  --black: #000;
+  --white: #fff;
+
+  --text-secondary: grey;
+  --text-primary: #e8eaed;
+
+  --bg-primary: #202124;
+  --bg-secondary: #292a2d;
+
+  --my-yellow: #b0914f;
+
+  --my-fonts: 'Merriweather', serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Neue Haas Grotesk Text Pro", Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
 }
-
-html,
 body {
-  height: 100%;
+  font-size: 17px;
+  font-family: var(--my-fonts);
+  line-height: 1.5;
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+
+  /* height: 100vh; */
+  /* overflow: hidden; */
 }
 
-html {
-  display: table;
-  margin: auto;
+/* scrollbar */
+:root {
+  --scroll-track: rgba(32, 33, 36);
+  --scroll-default: rgba(116, 116, 116, 0.7); /* #747474 */
+  --scroll-hover: rgba(154, 154, 154, 0.7); /* #9a9a9a */
+  --scroll-active: rgba(192, 192, 192, 0.7); /* #c0c0c0 */
 }
 
-body {
-  background-color: #1c1c1ced;
-  display: table-cell;
-  vertical-align: middle;
+*::-webkit-scrollbar {
+  overflow: visible;
+}
+*::-webkit-scrollbar-track {
+  background-clip: content-box;
+  background: var(--scroll-track);
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--scroll-default);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-hover);
+}
+*::-webkit-scrollbar-thumb:active {
+  background: var(--scroll-active);
 }
 
-p,
-a {
-  color: #b0914f;
-}
-
-a {
-  text-decoration: underline;
-}
-
-h1 {
+.section-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: white;
-  font-size: 75px;
-  margin: 55px;
+  min-height: 100vh;
+  width: 100vw;
 }
-.h1-colourful {
+
+img.profile {
+  border-radius: 5px;
+  margin: 11px;
+  border: 1px solid white;
+}
+img.profile:hover {
   transition: ease all 1s;
-  background: -webkit-linear-gradient(-70deg, #fff, #b0914f);
+  border: 1px solid var(--my-yellow);
+}
+
+.h1-colorful {
+  transition: ease all 1s;
+  background: -webkit-linear-gradient(-70deg, #fff, var(--my-yellow));
   -webkit-text-fill-color: transparent;
   background-clip: border-box;
   -webkit-background-clip: text;
+  font-size: 5rem;
+  margin: 1rem;
 }
 
-a:hover {
-  color: white;
+.current-status {
+  margin: 3rem auto ;
+  padding: .3rem;
+  max-height: 6.6rem;
+  border-radius: 3px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.current-status:hover {
+  background-color: var(--bg-secondary);
+}
+.current-status::-webkit-scrollbar {
+  width: .5rem;
+  border-radius: 3px;
+  float: right;
 }
 
-.social-links {
-  margin: 0.3em;
+.current-status strike, .current-status strike * {
+  color: #b0914f90;
 }
-img.profile {
-  border-radius: 7px;
-  margin: 11px;
-  border: 3px solid white;
+
+.social-div {
+  margin: 3rem auto;
+  margin-bottom: 0;
+  padding: .1rem;
+  border-radius: 11px 11px 0 0;
+  width: 95%;
 }
-img.profile:hover {
-  transition: ease all 0.5s;
-  border: 3px solid #b0914f;
+.social-link {
+  margin: .3rem;
 }
-.btn-resume {
-  color: #b0914f;
-  border: none;
-  background-color: #2c2c2c;
+
+p {
+  margin: .50rem auto;
+}
+p,
+a {
+  color: var(--my-yellow);
+  font-size: 1.5rem;
+}
+a {
   text-decoration: underline;
-  font-size: medium;
+}
+a:hover {
+  color: var(--text-primary);
+}
+a:active {
+  color: var(--text-secondary);
+}
+
+.btn-resume {
+  color: var(--my-yellow);
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-family: var(--my-fonts);
 }
 .btn-resume:hover {
-  color: #fff;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.page-status {
+  align-self: flex-end;
+  color: var(--text-secondary);
+  margin: 1.5rem;
+  text-align: center;
+}
+.page-status a {
+  color: var(--text-secondary);
+}
+.page-status a:hover {
+  color: var(--text-primary);
+}
+.page-status a:active {
+  color: var(--my-yellow);
 }
