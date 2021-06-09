@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
   --black: #000;
   --white: #fff;
@@ -24,12 +25,12 @@ body {
   font-size: 17px;
   font-family: var(--my-fonts);
   line-height: 1.5;
-
+  /* background-image: url("./images/piano.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
   background-color: var(--bg-primary);
   color: var(--text-primary);
-
-  /* height: 100vh; */
-  /* overflow: hidden; */
 }
 
 /* scrollbar */
@@ -39,7 +40,6 @@ body {
   --scroll-hover: rgba(154, 154, 154, 0.7); /* #9a9a9a */
   --scroll-active: rgba(192, 192, 192, 0.7); /* #c0c0c0 */
 }
-
 *::-webkit-scrollbar {
   overflow: visible;
 }
@@ -56,7 +56,6 @@ body {
 *::-webkit-scrollbar-thumb:active {
   background: var(--scroll-active);
 }
-
 .section-center {
   display: flex;
   flex-direction: column;
@@ -66,17 +65,11 @@ body {
   min-height: 100vh;
   width: 100vw;
 }
-
 img.profile {
   border-radius: 5px;
   margin: 11px;
-  border: 1px solid white;
-}
-img.profile:hover {
   transition: ease all 1s;
-  border: 1px solid var(--my-yellow);
 }
-
 .h1-colorful {
   transition: ease all 1s;
   background: -webkit-linear-gradient(-70deg, #fff, var(--my-yellow));
@@ -86,7 +79,6 @@ img.profile:hover {
   font-size: 5rem;
   margin: 1rem;
 }
-
 .current-status {
   margin: 3rem auto ;
   padding: .3rem;
@@ -94,6 +86,8 @@ img.profile:hover {
   border-radius: 3px;
   overflow-y: auto;
   overflow-x: hidden;
+  max-width: 90vw;
+  transition: ease all 1s;
 }
 .current-status:hover {
   background-color: var(--bg-secondary);
@@ -103,11 +97,9 @@ img.profile:hover {
   border-radius: 3px;
   float: right;
 }
-
 .current-status strike, .current-status strike * {
   color: #b0914f90;
 }
-
 .social-div {
   margin: 3rem auto;
   margin-bottom: 0;
@@ -117,8 +109,9 @@ img.profile:hover {
 }
 .social-link {
   margin: .3rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
 }
-
 p {
   margin: .50rem auto;
 }
@@ -136,20 +129,18 @@ a:hover {
 a:active {
   color: var(--text-secondary);
 }
-
 .btn-resume {
-  color: var(--my-yellow);
+  color: var(--text-secondary);
   border: none;
   background-color: transparent;
   text-decoration: underline;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: var(--my-fonts);
 }
 .btn-resume:hover {
   color: var(--text-primary);
   cursor: pointer;
 }
-
 .page-status {
   align-self: flex-end;
   color: var(--text-secondary);

@@ -1,60 +1,80 @@
+h2 {
+  color: var(--text-secondary);
+}
 .modal {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(240, 248, 255, 0.5);
+  background-color: rgba(232, 234, 237, .5);
+  transition: ease all 1s;
 }
 .grid {
   display: grid;
-  place-items: center;
+  place-items: end;
 }
 .modal-content {
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 75vw;
   height: 375px;
-  background-color: #fff;
+  background-color: var(--bg-secondary);
 }
-.modal-header,
-.modal-footer {
+.modal-header{
   padding: 11px;
+  background-color: var(--bg-primary);
+  display: flex;
+  overflow: auto;
 }
-.dismiss {
-  color: white;
-  transition: ease all 0.75s;
-  position: fixed;
-  font-size: 45px;
-  top: 17px;
-  right: 17px;
+.modal-title {
+  width: 90%;
+  text-align: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
-.dismiss:hover {
-  color: tomato;
-  font-size: 40px;
-  top: 19.5px;
-  right: 19.5px;
+.modal-close {
+  min-width: 50px;
+  width: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease all .5s;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  font-size: 1.5rem;
+  font-size: 3rem;
+}
+.modal-close:hover {
+  cursor: pointer;
+  color: #fff;
 }
 .btn {
-  border-radius: 7px;
-  padding: 11px;
+  padding: 3px 11px;
+  margin: 0 3px;
+  text-transform: lowercase;
+  background-color: transparent;
   border: none;
-  background-color: #b0914f;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  color: var(--text-secondary);
+  font-size: 2rem;
 }
 .btn:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
-.btn:active {
-  color: #b0914f;
-  background-color: white;
+.download {
+  margin: auto 3rem;
+  padding: 7px 11px;
+  border-radius: 3px;
+  background-color: var(--bg-secondary);
+  transition: ease all 1s;
+}
+.download:hover {
+  color: var(--text-primary);
+}
+.download:active {
+  color: #37956D;
 }

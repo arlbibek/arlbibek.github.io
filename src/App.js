@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 // My Components
 import ModalResume from "./ModalResume";
+import profile from "./images/plants.png";
 
 // CSS
 import "./App.css";
@@ -16,7 +17,7 @@ function App() {
           <img
             className="profile"
             alt="Profile Bibek Aryal"
-            src="./profile_bibek_aryal.jpg"
+            src={profile}
             width="150px"
             height="150px"
           />
@@ -49,7 +50,7 @@ function App() {
           <p>
             Security Research Analysts at a{" "}
             <a
-              href="#"
+              href="https://arlbibek.github.io/"
               rel="noreferrer"
               title="a startup company operating in stealth mode, avoiding public attention"
             >
@@ -64,7 +65,7 @@ function App() {
             onClick={() => setShow(true)}
             target="_blank"
             rel="noreferrer"
-            title="Read my resume (PDF)"
+            title="Read my resume: PDF"
             className="social-link btn-resume"
           >
             Resume
@@ -74,7 +75,7 @@ function App() {
             href="https://github.com/arlbibek"
             target="_blank"
             rel="noreferrer"
-            title="Watch me on GitHub"
+            title="Watch me on GitHub: arlbibek"
             className="social-link"
           >
             GitHub
@@ -83,26 +84,19 @@ function App() {
             href="https://www.linkedin.com/in/bibekaryal"
             target="_blank"
             rel="noreferrer"
-            title="Find me on LinkedIn"
+            title="Find me on LinkedIn: bibekaryal"
             className="social-link"
           >
             LinkedIn
           </a>
+          <a
+            className="social-link"
+            href="mailto:aryalbmail@gmail.com?subject=Let's collaborate!&body=Dear Bibek, "
+            title="mailto: aryalbmail@gmail.com"
+          >
+            Contact{" "}
+          </a>
         </div>
-        {/* <div id="" className="page-status">
-          <blockquote>
-            This page is{" "}
-            <a
-              href="https://github.com/arlbibek/arlbibek.github.io"
-              target="_blank"
-              rel="noreferrer"
-              title="View source code of this page"
-            >
-              under development
-            </a>
-            .
-          </blockquote>
-        </div> */}
       </article>
     </section>
   );
