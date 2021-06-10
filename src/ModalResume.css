@@ -1,5 +1,6 @@
 h2 {
   color: var(--text-secondary);
+  transition: ease all 500ms;
 }
 .modal {
   position: fixed;
@@ -8,7 +9,7 @@ h2 {
   right: 0;
   bottom: 0;
   background-color: rgba(232, 234, 237, .5);
-  transition: ease all 1s;
+  transition: ease all 500ms;
 }
 .grid {
   display: grid;
@@ -18,8 +19,9 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 75vw;
-  height: 375px;
+  height: 50vh;
   background-color: var(--bg-secondary);
+  transition: ease all 500ms;
 }
 .modal-header{
   padding: 11px;
@@ -35,6 +37,7 @@ h2 {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  transition: ease all 500ms;
 }
 .modal-close {
   min-width: 50px;
@@ -49,7 +52,7 @@ h2 {
   font-size: 1.5rem;
   font-size: 3rem;
 }
-.modal-close:hover {
+.modal-close i:hover {
   cursor: pointer;
   color: #fff;
 }
@@ -61,12 +64,13 @@ h2 {
   border: none;
   color: var(--text-secondary);
   font-size: 2rem;
+  transition: ease all 500ms;
 }
 .btn:hover {
   cursor: pointer;
 }
 .download {
-  margin: auto 3rem;
+  margin: auto 1rem;
   padding: 7px 11px;
   border-radius: 3px;
   background-color: var(--bg-secondary);
@@ -77,4 +81,30 @@ h2 {
 }
 .download:active {
   color: #37956D;
+}
+
+@media only screen and (max-width: 1280px) {
+  .modal-title h2 {
+    font-size: 2rem;
+  }}
+@media only screen and (max-width: 1000px) {
+  .modal-title h2 {
+    font-size: 1.5rem;
+  }
+  .modal-title button {
+    font-size: 2rem;
+  }
+  .modal-content {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .modal-title button span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .modal-title h2 {
+    display: none;
+  }
 }

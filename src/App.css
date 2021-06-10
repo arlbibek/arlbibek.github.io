@@ -104,6 +104,8 @@ img.profile {
   margin: 3rem auto;
   margin-bottom: 0;
   padding: .1rem;
+  padding-top: 1rem ;
+  padding-bottom: 1rem ;
   border-radius: 11px 11px 0 0;
   width: 95%;
 }

@@ -58,7 +58,7 @@ function App() {
             </a>
             !
           </p>
-          <p>Also awaiting graduation.</p>
+          <p>And awaiting graduation.</p>
         </div>
         <div className="social-div">
           <button

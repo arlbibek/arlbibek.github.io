@@ -12,7 +12,7 @@ const ModalResume = (props) => {
         <div className="modal-content">
           <div className="modal-header">
             <div className="modal-title">
-              <h2>Bibek Aryal Resume 2021.</h2>
+              <h2>Bibek Aryal Resume.</h2>
               <form
                 method="get"
                 action="https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal%202021.pdf"
@@ -22,7 +22,7 @@ const ModalResume = (props) => {
                   type="submit"
                   title="Download my Resume"
                 >
-                  <i class="fa fa-download" /> Download
+                  <i class="fa fa-download" /> <span>Download</span>
                 </button>
               </form>
             </div>
