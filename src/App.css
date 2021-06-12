@@ -1,61 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
-
-:root {
-  --black: #000;
-  --white: #fff;
-
-  --text-secondary: grey;
-  --text-primary: #e8eaed;
-
-  --bg-primary: #202124;
-  --bg-secondary: #292a2d;
-
-  --my-yellow: #b0914f;
-
-  --my-fonts: 'Merriweather', serif;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-size: 17px;
-  font-family: var(--my-fonts);
-  line-height: 1.5;
-  /* background-image: url("./images/piano.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-}
-
-/* scrollbar */
-:root {
-  --scroll-track: rgba(32, 33, 36);
-  --scroll-default: rgba(116, 116, 116, 0.7); /* #747474 */
-  --scroll-hover: rgba(154, 154, 154, 0.7); /* #9a9a9a */
-  --scroll-active: rgba(192, 192, 192, 0.7); /* #c0c0c0 */
-}
-*::-webkit-scrollbar {
-  overflow: visible;
-}
-*::-webkit-scrollbar-track {
-  background-clip: content-box;
-  background: var(--scroll-track);
-}
-*::-webkit-scrollbar-thumb {
-  background: var(--scroll-default);
-}
-*::-webkit-scrollbar-thumb:hover {
-  background: var(--scroll-hover);
-}
-*::-webkit-scrollbar-thumb:active {
-  background: var(--scroll-active);
-}
 .section-center {
   display: flex;
   flex-direction: column;
@@ -70,52 +12,63 @@ img.profile {
   margin: 11px;
   transition: ease all 1s;
 }
-.h1-colorful {
+.colorful {
   transition: ease all 1s;
   background: -webkit-linear-gradient(-70deg, #fff, var(--my-yellow));
   -webkit-text-fill-color: transparent;
   background-clip: border-box;
   -webkit-background-clip: text;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+header h1 {
   font-size: 5rem;
-  margin: 1rem;
+}
+header h2 {
+  font-size: 3rem;
 }
 .current-status {
-  margin: 3rem auto ;
-  padding: .3rem;
+  margin: 1rem auto;
+  padding: 0.3rem;
   max-height: 6.6rem;
   border-radius: 3px;
   overflow-y: auto;
   overflow-x: hidden;
-  max-width: 90vw;
+  width: 90vw;
   transition: ease all 1s;
 }
 .current-status:hover {
   background-color: var(--bg-secondary);
 }
 .current-status::-webkit-scrollbar {
-  width: .5rem;
+  width: 0.5rem;
   border-radius: 3px;
-  float: right;
+  display: none;
 }
-.current-status strike, .current-status strike * {
+.current-status strike,
+.current-status strike * {
   color: #b0914f90;
 }
 .social-div {
   margin: 3rem auto;
   margin-bottom: 0;
-  padding: .1rem;
-  padding-top: 1rem ;
-  padding-bottom: 1rem ;
+  padding: 0.1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-radius: 11px 11px 0 0;
   width: 95%;
 }
 .social-link {
-  margin: .3rem;
+  margin: 0.3rem;
   font-size: 1rem;
   color: var(--text-secondary);
 }
+p mark {
+  background-color: rgb(176, 145, 79, 0.1);
+  color: inherit;
+}
 p {
-  margin: .50rem auto;
+  margin: 0.7rem 3px;
 }
 p,
 a {
@@ -157,4 +110,11 @@ a:active {
 }
 .page-status a:active {
   color: var(--my-yellow);
+}
+
+@media only screen and (max-width: 600px) {
+  .current-status {
+    max-height: 7.5rem;
+    width: 95vw;
+  }
 }

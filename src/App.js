@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 // My Components
 import ModalResume from "./ModalResume";
-import profile from "./images/plants.png";
+import Profile from "./images/plants.png";
 
 // CSS
 import "./App.css";
@@ -13,50 +13,56 @@ function App() {
   return (
     <section className="section-center">
       <article>
-        <div>
-          <img
-            className="profile"
-            alt="Profile Bibek Aryal"
-            src={profile}
-            width="150px"
-            height="150px"
-          />
-        </div>
-        <h1 className="h1-colorful">Hi, I'm Bibek Aryal!</h1>
-        <div className="current-status">
+        <header className="colorful">
+          <div>
+            <img
+              className="profile"
+              alt="Plants"
+              src={Profile}
+              width="150px"
+              height="150px"
+            />
+          </div>
+          <h2>Hi,</h2>
+          <h1>
+            I'm Bibek <strong>Aryal!</strong>
+          </h1>
+        </header>
+        <div className="current-status" title="current status">
           <p>
-            <strike>
-              A final year{" "}
-              <a
-                href="https://islington.edu.np/programmes/b-sc-hons-computer-networking-it-security/"
-                target="_blank"
-                rel="noreferrer"
-                title="See my course content"
-              >
-                IT
-              </a>{" "}
-              student at{" "}
-              <a
-                href="https://islington.edu.np"
-                target="_blank"
-                rel="noreferrer"
-                title="Go to the official webpage of Islington College"
-              >
-                Islington College
-              </a>
-              , Kathmandu, Nepal.
-            </strike>
+            {/* <strike> */}A final year{" "}
+            <a
+              href="https://islington.edu.np/programmes/b-sc-hons-computer-networking-it-security/"
+              target="_blank"
+              rel="noreferrer"
+              title="See my course content"
+            >
+              IT
+            </a>{" "}
+            student at{" "}
+            <a
+              href="https://islington.edu.np"
+              target="_blank"
+              rel="noreferrer"
+              title="Go to the official webpage of Islington College"
+            >
+              Islington College
+            </a>
+            , Kathmandu, Nepal.
+            {/* </strike> */}
           </p>
           <p>
-            Security Research Analysts at a{" "}
-            <a
-              href="https://arlbibek.github.io/"
-              rel="noreferrer"
-              title="a startup company operating in stealth mode, avoiding public attention"
-            >
-              Stealth startup
-            </a>
-            !
+            <mark>
+              Security Research Analysts intern at a{" "}
+              <a
+                href="/"
+                rel="noreferrer"
+                title="a startup company operating in stealth mode, avoiding public attention"
+              >
+                Stealth startup
+              </a>
+              !
+            </mark>
           </p>
           <p>And awaiting graduation.</p>
         </div>

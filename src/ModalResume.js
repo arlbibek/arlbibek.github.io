@@ -1,5 +1,7 @@
+// React Component
 import React from "react";
 
+// CSS
 import "./ModalResume.css";
 
 const ModalResume = (props) => {
@@ -8,32 +10,8 @@ const ModalResume = (props) => {
   }
   return (
     <>
-      <div className="modal grid">
+      <div className="modal">
         <div className="modal-content">
-          <div className="modal-header">
-            <div className="modal-title">
-              <h2>Bibek Aryal Resume.</h2>
-              <form
-                method="get"
-                action="https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal%202021.pdf"
-              >
-                <button
-                  className="btn download"
-                  type="submit"
-                  title="Download my Resume"
-                >
-                  <i class="fa fa-download" /> <span>Download</span>
-                </button>
-              </form>
-            </div>
-            <div className="modal-close">
-              <i
-                className="fas fa-times"
-                onClick={props.onClose}
-                title="dismiss"
-              />
-            </div>
-          </div>
           <iframe
             title="Resume Bibek Aryal 2021"
             src="https://docs.google.com/gview?url=https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal%202021.pdf&embedded=true"
@@ -43,6 +21,30 @@ const ModalResume = (props) => {
             }}
             frameborder="0"
           ></iframe>
+          <div className="modal-header">
+            <div className="modal-item md-title">
+              <h2>Bibek Aryal Resume.</h2>
+            </div>
+            <div className="modal-item md-buttons">
+              <div className="md-btn">
+                <form
+                  method="get"
+                  action="https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal%202021.pdf"
+                >
+                  <button className="" type="submit" title="Download my Resume">
+                    <i class="fa fa-download" /> <span>Download</span>
+                  </button>
+                </form>
+              </div>
+              <div className="md-btn close">
+                <i
+                  className="fas fa-times"
+                  onClick={props.onClose}
+                  title="dismiss"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

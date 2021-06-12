@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --black: #000;
+  --white: #fff;
+
+  --text-secondary: grey;
+  --text-primary: #e8eaed;
+
+  --bg-primary: #202124;
+  --bg-secondary: #292a2d;
+
+  --my-yellow: #b0914f;
+
+  --my-fonts: "Merriweather", serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 17px;
+  font-family: var(--my-fonts);
+  line-height: 1.5;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* scrollbar */
+:root {
+  --scroll-track: rgba(32, 33, 36);
+  --scroll-default: rgba(116, 116, 116, 0.7); /* #747474 */
+  --scroll-hover: rgba(154, 154, 154, 0.7); /* #9a9a9a */
+  --scroll-active: rgba(192, 192, 192, 0.7); /* #c0c0c0 */
+}
+*::-webkit-scrollbar {
+  overflow: visible;
+}
+*::-webkit-scrollbar-track {
+  background-clip: content-box;
+  background: var(--scroll-track);
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--scroll-default);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-hover);
+}
+*::-webkit-scrollbar-thumb:active {
+  background: var(--scroll-active);
+}

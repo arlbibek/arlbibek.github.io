@@ -1,110 +1,105 @@
-h2 {
-  color: var(--text-secondary);
-  transition: ease all 500ms;
-}
 .modal {
+  background-color: rgba(52, 57, 70, 0.5);
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(232, 234, 237, .5);
-  transition: ease all 500ms;
-}
-.grid {
+  /* grid */
   display: grid;
-  place-items: end;
+  place-items: start;
 }
+
 .modal-content {
   margin-left: auto;
   margin-right: auto;
-  width: 75vw;
+  width: 79vw;
   height: 50vh;
   background-color: var(--bg-secondary);
-  transition: ease all 500ms;
-}
-.modal-header{
-  padding: 11px;
-  background-color: var(--bg-primary);
-  display: flex;
-  overflow: auto;
-}
-.modal-title {
-  width: 90%;
-  text-align: center;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  transition: ease all 500ms;
-}
-.modal-close {
-  min-width: 50px;
-  width: 10%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: ease all .5s;
-  color: var(--text-secondary);
-  background-color: var(--bg-secondary);
-  font-size: 1.5rem;
-  font-size: 3rem;
-}
-.modal-close i:hover {
-  cursor: pointer;
-  color: #fff;
-}
-.btn {
-  padding: 3px 11px;
-  margin: 0 3px;
-  text-transform: lowercase;
-  background-color: transparent;
-  border: none;
-  color: var(--text-secondary);
-  font-size: 2rem;
-  transition: ease all 500ms;
-}
-.btn:hover {
-  cursor: pointer;
-}
-.download {
-  margin: auto 1rem;
-  padding: 7px 11px;
-  border-radius: 3px;
-  background-color: var(--bg-secondary);
-  transition: ease all 1s;
-}
-.download:hover {
-  color: var(--text-primary);
-}
-.download:active {
-  color: #37956D;
+  transition: ease all 50ms;
 }
 
-@media only screen and (max-width: 1280px) {
-  .modal-title h2 {
-    font-size: 2rem;
-  }}
-@media only screen and (max-width: 1000px) {
-  .modal-title h2 {
+.modal-header {
+  padding: 3px;
+  background-color: var(--bg-primary);
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-title {
+  width: 100%;
+}
+
+.md-title h2 {
+  color: var(--text-secondary);
+  transition: ease all 500ms;
+  font-size: 2rem;
+}
+
+.md-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 10px;
+}
+
+.md-btn button,
+.md-btn i {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: none;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+}
+
+.md-btn {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  min-width: max-content;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.md-btn button:hover {
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.md-btn i:hover {
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .modal-content {
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .md-title h2 {
     font-size: 1.5rem;
   }
-  .modal-title button {
-    font-size: 2rem;
-  }
-  .modal-content {
-    width: 90vw;
-  }
 }
-@media only screen and (max-width: 700px) {
-  .modal-title button span {
+
+@media only screen and (max-width: 500px) {
+  .md-btn button span {
     display: none;
   }
 }
-@media only screen and (max-width: 350px) {
-  .modal-title h2 {
-    display: none;
+
+@media only screen and (max-width: 450px) {
+  .md-title h2 {
+    font-size: 1.1rem;
   }
 }
