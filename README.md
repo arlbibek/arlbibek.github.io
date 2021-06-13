@@ -2,4 +2,4 @@
 
 A portfolio website made using React.
 
-[Vist webpage](https://arlbibek.github.io/).
+[Visit webpage](https://arlbibek.github.io/).
