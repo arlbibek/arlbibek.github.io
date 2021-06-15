@@ -14,7 +14,7 @@ const ModalResume = (props) => {
         <div className="modal-content">
           <iframe
             title="Resume Bibek Aryal 2021"
-            src="https://docs.google.com/gview?url=https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal%202021.pdf&embedded=true"
+            src="https://docs.google.com/gview?url=https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal.pdf&embedded=true"
             style={{
               width: "100%",
               height: "100%",
@@ -29,12 +29,23 @@ const ModalResume = (props) => {
               <div className="md-btn">
                 <form
                   method="get"
-                  action="https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal%202021.pdf"
+                  action="https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal.pdf"
                 >
                   <button className="" type="submit" title="Download my Resume">
                     <i class="fa fa-download" /> <span>Download</span>
                   </button>
                 </form>
+              </div>
+              <div className="md-btn">
+                <a
+                  href="https://docs.google.com/viewerng/viewer?url=https://github.com/arlbibek/resume/raw/main/Resume%20Bibek%20Aryal.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Open document in new tab"
+                  className="social-link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
               <div className="md-btn close">
                 <i
