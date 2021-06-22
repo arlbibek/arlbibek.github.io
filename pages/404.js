@@ -47,7 +47,7 @@ export default function FourOhFour() {
           <br />
           <hr />
           <br />
-          <p>The page your are looking for doesn&apos;t exist.</p>
+          <p>The page your are looking for doesn't exist.</p>
           <br />
           <Link href="/">
             <a title="to home">Go to home.</a>
