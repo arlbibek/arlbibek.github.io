@@ -29,7 +29,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.intro}>
-            <h1 className={styles.colorful}>Hi, I'm Bibek Aryal!</h1>
+            <h1 className={styles.colorful}>Hi, I&apos;m Bibek Aryal!</h1>
           </div>
           <CurrentStatus />
         </article>
