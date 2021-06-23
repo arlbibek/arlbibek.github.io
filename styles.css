@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Merriweather", serif !important;
+  font-size: 17px;
+  line-height: 1.5;
+
+  background-color: #202124;
+  color: #808080;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
+a {
+  color: #1e90ff;
+  font-size: inherit;
+  text-decoration: underline;
+  transition: ease all 500ms;
+}
+a:hover {
+  color: #1e90ffb3;
+}
