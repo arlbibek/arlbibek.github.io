@@ -17,7 +17,7 @@ export default function Home(props) {
         <title>
           Bibek Aryal - {props.page ? props.page : "Networking and IT Security"}
         </title>
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="./favicon.png" />
 
         <link rel="apple-touch-icon" href="/favicon.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

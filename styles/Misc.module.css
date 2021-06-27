@@ -1,0 +1,88 @@
+.container {
+  min-height: 100vh;
+  padding-top: 3rem;
+}
+.container h1 {
+  font-size: 3rem;
+}
+.container h2 {
+  font-size: 1.7rem;
+}
+
+.main {
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  transition: ease all 500ms;
+}
+.main h1 {
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+  .main {
+    width: 95vw;
+  }
+}
+
+.article ul {
+  padding: 7px;
+}
+.article ul li {
+  list-style: none;
+  padding: 0.3rem;
+  padding-left: 20px;
+  background-image: url("../public/favicon.png");
+  background-position: left center;
+  background-size: 0.8rem;
+  background-repeat: no-repeat;
+}
+
+.links {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border: 0.1px solid transparent;
+  border-radius: 5px;
+  overflow: auto;
+  transition: ease all 1s;
+}
+.links:hover {
+  border-color: var(--my-yellow);
+}
+.links a:hover {
+  cursor: pointer;
+  color: var(--my-yellow);
+}
+.links p mark {
+  color: grey;
+  background-color: transparent;
+  background-color: rgb(128, 128, 128, 0.1);
+  font-size: small;
+  border-radius: 3px;
+}
+.links a {
+  text-decoration: none;
+}
+.links li svg {
+  color: palevioletred;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.footer a {
+  color: var(--text-secondary);
+}
+.footer a:hover {
+  color: var(--text-primary);
+  cursor: pointer;
+}

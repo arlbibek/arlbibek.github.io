@@ -121,6 +121,11 @@
   background-color: var(--bg-secondary);
   transition: ease all 50ms;
 }
+@media only screen and (max-width: 850px) {
+  .modalContent {
+    width: 95vw;
+  }
+}
 
 .modalHeader {
   padding: 3px;
@@ -145,12 +150,24 @@
   transition: ease all 500ms;
   font-size: 2rem;
 }
+@media only screen and (max-width: 780px) {
+  .mdTitle h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .mdTitle h2 {
+    font-size: 1.1rem;
+  }
+}
+
 .mdBtnBox {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-left: 10px;
 }
+
 .mdBtn {
   background-color: var(--bg-secondary);
   color: var(--text-secondary);
@@ -159,6 +176,11 @@
   margin: 0.2rem;
   border: none;
   border-radius: 3px;
+}
+@media only screen and (max-width: 550px) {
+  .mdBtn button span {
+    display: none;
+  }
 }
 .mdBtn button {
   background-color: transparent;
@@ -171,24 +193,14 @@
   color: var(--text-primary);
 }
 
-@media only screen and (max-width: 850px) {
-  .modalContent {
-    width: 95vw;
-  }
-}
-@media only screen and (max-width: 780px) {
-  .mdTitle h2 {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .mdBtn button span {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .mdTitle h2 {
-    font-size: 1.1rem;
-  }
+.float {
+  position: fixed;
+  width: 3em;
+  height: 1.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 3px;
+  border: 0.1px solid transparent;
+  text-align: center;
 }

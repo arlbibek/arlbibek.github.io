@@ -4,13 +4,15 @@
   --black: #000;
   --white: #fff;
 
-  --text-secondary: grey;
+  --text-secondary: #808080;
   --text-primary: #e8eaed;
 
-  --bg-primary: #202124;
-  --bg-secondary: #292a2d;
+  --bg-primary: #202124; /* #202124 */
+  --bg-secondary: #292a2d; /* #292a2d */
 
   --my-yellow: #b0914f;
+  --favicon-primary: #ffb300;
+  --favicon-secondary: #da7b1d;
 }
 *,
 *::before,
@@ -22,12 +24,13 @@
 
 html,
 body {
-  font-family: "Merriweather", serif !important;
+  font-family: "Merriweather", sans-serif;
   font-size: 17px;
   line-height: 1.5;
 
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  scroll-behavior: smooth;
 }
 
 a {
