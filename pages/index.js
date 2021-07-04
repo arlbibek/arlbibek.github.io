@@ -19,7 +19,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head />
-      <header></header>
       <main className={styles.main}>
         <article>
           <div className={styles.img}>
@@ -37,8 +36,18 @@ export default function Home() {
           <CurrentStatus />
         </article>
         <SocialLinks />
+        <div className={styles.float}>
+          <Link href="/misc">
+            <a
+              style={{ textDecoration: "none" }}
+              className={styles.monkey}
+              title="Please don't click me 🥺"
+            >
+              🙊
+            </a>
+          </Link>
+        </div>
       </main>
-      <footer></footer>
     </div>
   );
 }
@@ -124,11 +133,6 @@ const SocialLinks = () => {
       >
         Contact
       </a>
-      <Link href="/misc">
-        <a title="Miscellaneous" className={styles.socialLink}>
-          Misc
-        </a>
-      </Link>
     </div>
   );
 };

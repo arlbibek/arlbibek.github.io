@@ -23,19 +23,26 @@ export default function misc() {
           </a>
         </Link>
         <h1>Congratulations!</h1>
-        <p>You&apos;ve discovered the Miscellaneous page. 🥳</p>
+        <p>You&apos;ve entered the Miscellaneous page. 🥳</p>
+        <code>enjoy :)</code>
         <article className={styles.article}>
           <div className={styles.links} id="social">
             <h2>🩰 Social</h2>
             <ul>
-              <Li title="GitHub" link="https://github.com/arlbibek" />
               <Li
-                title="LinkedIn"
+                title="GitHub - arlbibek"
+                link="https://github.com/arlbibek"
+              />
+              <Li
+                title="LinkedIn - bibekaryal"
                 link="https://www.linkedin.com/in/bibekaryal"
               />
-              <Li title="Facebook" link="https://facebook.com/bibeknaryal" />
               <Li
-                title="YouTube"
+                title="Facebook - bibeknaryal"
+                link="https://facebook.com/bibeknaryal"
+              />
+              <Li
+                title="YouTube - Bibek Aryal"
                 link="https://www.youtube.com/channel/UC1Z6c7Q69HeY0M22AyFSgkA"
               />
             </ul>
@@ -102,10 +109,11 @@ export default function misc() {
               <Li title="Into the Wild (2007)" />
               <Li title="Liar Liar (1997)" />
               <Li title="The Pianist (2002)" />
+              <Li title="Gullak (2019 - )" />
             </ul>
           </div>
           <div className={styles.links} id="websites">
-            <h2>🌐 Some useful Websites</h2>
+            <h2>🌏 Some useful Websites</h2>
             <ul>
               <Li
                 title="Convertio — File Converter"
@@ -151,12 +159,16 @@ export default function misc() {
                 link="https://alternativeto.net/"
               />
               <Li
-                link="https://emojipedia.org/"
                 title="Emojipedia — Home of Emoji Meanings 💁👌🎍😍"
+                link="https://emojipedia.org/"
               />
               <Li
-                link="https://www.lexilogos.com/keyboard/devanagari.htm"
+                title="is.gd - a URL shortener. Mmmm, tasty URLs!"
+                link="https://is.gd/"
+              />
+              <Li
                 title="Devanagari Keyboard OnLine • Hindi Alphabet • LEXILOGOS"
+                link="https://www.lexilogos.com/keyboard/devanagari.htm"
               />
               <br />
               <Li
@@ -168,7 +180,6 @@ export default function misc() {
                 link="https://www.bouncingdvdlogo.com/"
               />
               <Li link="https://neal.fun/" title="Neal.fun" />
-              <Li link="https://neal.fun/" />
             </ul>
           </div>
         </article>

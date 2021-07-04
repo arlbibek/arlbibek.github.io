@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 :root {
   --black: #000;
@@ -44,6 +45,10 @@ a:hover {
 }
 button {
   font-family: inherit;
+}
+code {
+  font-family: "Source Code Pro", monospace;
+  color: var(--text-secondary);
 }
 
 /* scrollbar */
