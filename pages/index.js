@@ -14,7 +14,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   console.log(
-    "Hell, World! I'm Bibek Aryal \n+ A final year IT student at Islington College, Kathmandu, Nepal. // Awaiting graduation \n+ Security Research Analysts intern at a Stealth startup!\n+ With few other things. \nenjoy :)"
+    "Hello, World! I'm Bibek Aryal \n> A final year IT student at Islington College, Kathmandu, Nepal. // Awaiting graduation \n> Security Research Analysts intern at a Stealth startup!\n> With few other things. \nenjoy :)"
   );
   return (
     <div className={styles.container}>
