@@ -34,6 +34,7 @@
   background-clip: border-box;
   -webkit-background-clip: text;
   font-size: 5rem;
+  text-align: center;
 }
 
 /* Current Status */
@@ -210,4 +211,53 @@
 .monkey:hover {
   cursor: pointer;
   color: inherit;
+}
+.lineBreak {
+  display: none;
+}
+
+/* medium screens */
+@media only screen and (max-width: 890px) {
+  .colorful {
+    font-size: 3rem;
+  }
+  .currentStatus {
+    max-height: 5rem;
+    width: 27rem;
+  }
+}
+
+/* small screens */
+@media only screen and (max-width: 550px) {
+  .colorful {
+    font-size: 2.5rem;
+  }
+  .currentStatus {
+    width: 25rem;
+    max-height: 7rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .socialLink,
+  .resumeBtn {
+    margin: 3px;
+    padding: 3px;
+    font-size: 0.8rem;
+  }
+  .SocialContainer {
+    background-color: var(--bg-secondary);
+    margin-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .img {
+    margin-top: 0;
+  }
+  .lineBreak {
+    display: block;
+  }
+  .currentStatus {
+    width: 17rem;
+    font-size: 1rem;
+  }
 }
