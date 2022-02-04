@@ -1,5 +1,5 @@
 # A personal portfolio
 
-Actually, redirects a personal portfolio (i.e. bibeka.com.np).
+Actually, redirects to a personal portfolio (i.e. [bibeka.com.np](bibeka.com.np)).
 
-[Visit](https://arlbibek.github.io)
+[Visit](https://bibeka.com.np/)
